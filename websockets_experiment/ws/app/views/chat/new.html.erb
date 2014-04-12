@@ -1,0 +1,14 @@
+<h1>The Chat Page!</h1>
+<a href='#'><button id="start_chat">Start Chat!</button></a>
+  <%= form_for '@chat', url: {action: 'create'}, html: {class: "chat_form"} do |f| %>
+  <p>
+    <%= f.text_area :chat_window, size: "60x12" %>
+  </p>
+  <p>
+    <%= f.text_area :user_input, size: "60x3" %>
+  </p>
+  <p>
+    <%= f.submit "Send" %>
+  </p>
+<% end %>
+
