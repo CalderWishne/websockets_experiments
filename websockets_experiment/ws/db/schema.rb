@@ -13,14 +13,14 @@
 
 ActiveRecord::Schema.define(version: 20140412203943) do
 
-  create_table "chats", force: true do |t|
+  create_table "chat_messages", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "message_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "messages", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "message_id"
+  create_table "chats", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

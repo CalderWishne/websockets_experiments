@@ -1,4 +1,7 @@
 WebsocketRails::EventMap.describe do
+  namespace :chat_messages do
+    subscribe :broadcast, to: ChatMessagesController, with_method: :broadcast
+  end
 
 
 
