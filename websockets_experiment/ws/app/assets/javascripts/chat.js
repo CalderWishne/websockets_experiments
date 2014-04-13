@@ -20,7 +20,6 @@ console.log('jQuery!');
     event.preventDefault();
     var message = $('#_task_user_input').val();
     sendChatMessage(message);
-    // receiveAndDisplay();
   });
 });
 
