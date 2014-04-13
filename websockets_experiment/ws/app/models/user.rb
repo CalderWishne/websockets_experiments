@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :messages
-  has_many :chats, through: :messages
+  has_many :chat_messages
+  has_many :chats, through: :chat_messages
 end

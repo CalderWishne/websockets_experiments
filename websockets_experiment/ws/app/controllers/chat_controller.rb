@@ -4,4 +4,12 @@ class ChatController < ApplicationController
 
   end
 
+  def create
+
+  end
+
+  def update
+
+  end
+
 end

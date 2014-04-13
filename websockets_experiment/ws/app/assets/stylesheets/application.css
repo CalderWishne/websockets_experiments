@@ -14,3 +14,11 @@
 .chat_form {
   display: none;
 }
+
+#chat_window {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: none;
+  overflow: scroll;
+}
